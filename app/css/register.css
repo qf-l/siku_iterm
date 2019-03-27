@@ -1,0 +1,251 @@
+.bgcolor {
+    padding: 30px 0;
+}
+.skSmallStyle .reg_box, .skSmallStyle .login_center {
+    width: 990px;
+}
+.reg_box {
+    width: 1200px;
+    margin: 0 auto;
+    height: 720px;
+}
+
+.reg_center {
+    width: 310px;
+    padding: 30px 35px;
+    float: right;
+    background-color: #fff;
+    margin-top: 80px;
+    position: relative;
+}
+.btn_reg_submit {
+    padding-top: 10px;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.tel_show, .email_show, .again_pass, .tel_c, .email_c, .kapt_show, .verify_code_show {
+    display: none;
+}
+.regTips {
+    width: 100%;
+}
+.cli{
+    width: 310px;
+}
+.zindex {
+    z-index: 2;
+}
+.login_tips {
+    position: relative;
+    z-index: 1;
+}
+.t_right {
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+    float: left;
+}
+.focus {
+    color: #999;
+}
+.regName_tips {
+    width: 240px;
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+    font-family: microsoft yahei;
+}
+
+.f14 {
+    font-size: 14px;
+    font-family: microsoft yahei;
+}
+.reg_box .reg_in {
+    width: 298px;
+    height: 20px;
+    line-height: 20px;
+    padding: 10px 5px;
+    border: 1px solid #dedede;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'microsoft yahei';
+    border-radius: 0;
+    -webkit-transition: border linear .2s,box-shadow linear .2s;
+    -moz-transition: border linear .2s, box-shadow linear .2s;
+    -o-transition: border linear .2s, box-shadow linear .2s;
+    -ms-transition: border linear .2s, box-shadow linear .2s;
+    transition: border linear .2s, box-shadow linear .2s;
+}
+textarea, input[type = "text"], input[type = "password"], select {
+    display: inline-block;
+    color: #333;
+    vertical-align: middle;
+}
+ul.clearfix{
+   padding: 0;
+}
+
+
+.btn_reg_submit .input_sub {
+    width: 100%;
+    background-color: #f19108;
+    border: 0;
+    cursor: pointer;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+element.style {
+    clear: both;
+    background-color: #ccc;
+}
+.protocol_check {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    padding: 5px 0;
+    color: #999;
+}
+.btn_reg_submit p a {
+    color: #999;
+}
+element.style {
+    width: 150px;
+    display: none;
+}
+.reg_box .blur_error {
+    border: 1px solid red;
+}
+.blur {
+    color: red;
+    font-weight: bold;
+    width: 240px;
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+    float: right;
+    margin: 0;
+    padding: 0;
+
+}
+.regName_tips {
+    width: 240px;
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+    font-family: microsoft yahei;
+}
+.regName_tips {
+    width: 240px;
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+    font-family: microsoft yahei;
+}
+.msg a.active {
+    color: #f19108;
+}
+.ttd {
+    width: 298px;
+    height: 20px;
+    line-height: 20px;
+    padding: 10px 5px;
+    border: 1px solid #dedede;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'microsoft yahei';
+    border-radius: 0;
+    -webkit-transition: border linear .2s, box-shadow linear .2s;
+    -moz-transition: border linear .2s, box-shadow linear .2s;
+    -o-transition: border linear .2s, box-shadow linear .2s;
+    -ms-transition: border linear .2s, box-shadow linear .2s;
+    transition: border linear .2s, box-shadow linear .2s;
+}
+
+.teemm {
+    width: 240px;
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+    font-family: microsoft yahei;
+    float: right;
+    margin: 0;
+    padding: 0;
+    color: #999;
+}
+
+.labbl {
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+#kaptcha{
+   width: 127px;
+   float: left;
+}
+.ddh{
+    margin-top: 12px;
+}
+.change {
+    margin: 12px 0 0 10px;
+}
+#verifyCode{
+    margin: 12px 0 0 0;
+}
+.btnStyle01 {
+    background-position: left -222px;
+    border: 1px solid #cfcfcf;
+    color: #5d5d5d;
+}
+#verifyCodeBtn{
+    margin:10px;
+    padding: 0 10px;
+    line-height: 23px;
+    height: 23px;
+    background: url(https://safeimg.secoo.com/imagesNew/globalPic/btn_bg_sprite.png) repeat-x;
+    display: inline-block;
+}
+.kapt_show{
+    display:none;
+}
+.verify_code_show{
+    display:none;
+}
+.form-box .abba{
+    display:block;
+}
+.tdda{
+    margin-left: 10px;
+    width: 80px;
+    height: 40px;
+    background:rgba(250, 250, 250, 0.5);
+    border: 1px solid #ccc;
+}
+#nut{
+     background:#ccc;
+      border: 0;  
+     margin-left: 10px; 
+     width:80px;
+      height:40px;
+}
+.lgg{
+   border: 1px solid transparent;  
+   outline: none;  
+   background-color: #fff;
+
+}
+#yzm{
+    font-size: 14px;
+    line-height: 42px;
+    text-align: center;
+    color: red;
+}

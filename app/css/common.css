@@ -1,0 +1,260 @@
+body,
+html,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+input,
+textarea,
+p,
+th,
+td,
+a,
+img,
+span {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: tahoma, arial, \5b8b\4f53, sans-serif;
+}
+
+ol,
+ul,
+li,
+dl,
+dd,
+dt {
+    list-style: none;
+}
+
+div {
+    display: block;
+}
+input,
+        textarea,
+        select,
+        button {
+            text-rendering: auto;
+            color: initial;
+            letter-spacing: normal;
+            word-spacing: normal;
+            text-transform: none;
+            text-indent: 0px;
+            text-shadow: none;
+            display: inline-block;
+            text-align: start;
+            margin: 0em;
+            font: 400 13.3333px Arial;
+        }
+
+        input[type="button"i],
+        input[type="submit"i],
+        input[type="reset"i],
+        input[type="file"i]::-webkit-file-upload-button,
+        button {
+            align-items: flex-start;
+            text-align: center;
+            cursor: default;
+            color: buttontext;
+            background-color: buttonface;
+            box-sizing: border-box;
+            padding: 2px 6px 3px;
+            border-width: 2px;
+            border-style: outset;
+            border-color: buttonface;
+            border-image: initial;
+        }
+
+        user agent stylesheet input[type="button"i],
+        input[type="submit"i],
+        input[type="reset"i],
+        input[type="file"i]::-webkit-file-upload-button,
+        button {
+            padding: 1px 6px;
+        }
+        input[type = "radio"], input[type="checkbox"] {
+            position: relative;
+            top: 3px;
+            *top: 1px;
+            margin-right: 2px;
+        }
+
+        button,
+        input,
+        select,
+        textarea {
+            font-size: 100%;
+        }
+        body {
+            background: #fdf8f4 url(https://safeimg.secoo.com/imagesNew/loginPic/login_03.jpg) no-repeat center top
+        }
+
+        element.style {
+            display: inline-block;
+            width: 50px;
+            height: 25px;
+            cursor: pointer;
+        }
+
+        Style Attribute {
+            display: inline-block;
+            width: 50px;
+            height: 25px;
+            cursor: pointer;
+        }
+
+        ul,
+        menu,
+        dir {
+            display: block;
+            list-style-type: disc;
+            margin-block-start: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+        }
+        li {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+        p {
+            display: block;
+            margin-block-start: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+        a {
+            text-decoration: none;
+            color: #666;
+        }
+        label {
+            cursor: default;
+        }
+
+        img {
+            vertical-align: middle;
+            border: 0;
+        }
+
+        /* 头部  */
+        #loginhead-kusi {
+            height: 70px;
+            width: 100%;
+            filter: alpha(opacity=80);
+            background-color: #000;
+            background: rgba(0, 0, 0, 0.8)
+        }
+
+        #logo-kusi-z {
+            width: 1200px;
+            height: 70px;
+            margin: 0 auto;
+        }
+
+        .lg {
+            float: left;
+        }
+
+        .dh {
+            float: right
+        }
+
+        .logo-kusi-right a {
+            color: #999;
+            display: inline-block;
+            line-height: 70px;
+            padding: 0 10px;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        #loginhead-kusi .dh a {
+            text-decoration: none;
+            color: #999;
+        }
+
+        #loginhead-kusi .logo-kusi-right a:hover {
+            color: #ec9;
+        }
+
+        /* foot */
+        .ncontainer {
+            margin: 0 auto;
+            width: 1200px;
+        }
+
+        .nfooter a {
+            color: inherit;
+        }
+
+        body .nfooter a:hover {
+            color: #f8a120;
+        }
+
+        .nfooter {
+            margin-top: 70px;
+            padding: 37px 0 66px;
+            background-color: #f5f5f5;
+        }
+
+        .nfooter * {
+            font-size: 14px;
+        }
+
+        .nfooter-list li {
+            float: left;
+            width: 236px;
+            line-height: 34px;
+        }
+
+        .nfooter-info {
+            margin-top: 25px;
+            line-height: 36px;
+        }
+
+        .nfooter-info span {
+            margin-right: 28px;
+        }
+
+        .nfooter-info-imgs {
+            margin-top: 8px;
+        }
+
+        .nfooter-info-imgs a {
+            float: left;
+            margin-right: 20px;
+            width: 108px;
+            height: 40px;
+        }
+
+        .nfooter-info-imgs img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .clearfix:after {
+            visibility: hidden;
+            display: block;
+            font-size: 0;
+            content: " ";
+            clear: both;
+            height: 0;
+        }
+        .fr {
+            float: right;
+        }
+
+        .fl {
+            float: left;
+        }
