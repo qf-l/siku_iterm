@@ -43,6 +43,80 @@ input{
 	clear:both;
 	overflow:hidden;/* 溢出隐藏 */
 }
+#youbian {
+    position: relative;
+    float: right;
+}
+#youbian_01{
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    color:black;
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+    top: -15px;
+}
+#login{
+    display:none;
+    background:ghostwhite;
+    width:150px;
+    height:100px;
+    position:absolute;
+    left:50%;
+    top:111%;
+    margin-top:-125px;
+    z-index: 1;
+}
+#login #close_login{
+    position:absolute;
+    right:0px;
+    top:-6px;
+    font-size:20px;
+    width:20px;
+    height:20px;
+    cursor:pointer;
+}
+.zhongjian_01{
+    position: relative;
+    left: 133px;
+    top: 64px;
+    font-size: 30px;
+}
+
+#login .zuo{
+    padding: 10px 10px;
+    position: relative;
+    left: 9px;
+    top: 24px;
+}
+#login .you{
+    padding: 10px 10px;
+    position: relative;
+    left: 33px;
+    top: 24px;
+}
+.chengle{
+    position: relative;
+    width: 200px;
+    height: 70px;
+    background: rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    left: 50%;
+}
+.chengle p{
+    text-align: center;
+    color: black;
+    font-size: 16px;
+}
+.chengle .ojbk{
+    padding: 5px;
+    width: 45px;
+    height: 30px;
+    margin: 11px 0px 0px 78px;
+}
     </style>
 </head>
 
@@ -90,18 +164,15 @@ input{
                                 </td>
                                 </p>
                             </tr>
-                            <tr class="second">
-                                <td>
-                                    <p>*<span>手机号码</span><select>
-                                            <option style="color:black">大陆</option>
-                                        </select><input type="text" value="">
-                                </td>
-                                </p>
-                            </tr>
+                            
                         </tbody>
                     </table>
                     <div class="zuihou">
-                        <a href="">确认收货地址</a>
+                        <button class="wanmei">确认收货地址</button>
+                    </div>
+                    <div class="chengle" style="display:none;" >
+                        <p>填写成功</p>
+                        <button class="ojbk">确认</button>
                     </div>
                 </div>
                 <div class="jieshao">
@@ -151,11 +222,14 @@ input{
                         </div>
                         <div class="xiugai_01">
                             <h3>操作</h3>
-                            <button class="default" style="border: 0;
- 
-                            background-color: transparent;
-                             
-                            outline: none ">删除</button>
+                            <div id="mask"></div>
+                            <div id="login">
+                                <h1>确认删除物品吗?</h1>
+                                <span id="close_login">×</span>
+                                <button class="zuo">确定</button>
+                                <button class="you">取消</button>
+                            </div>
+                            <a href="javascript:;" id="youbian_01">删除</a>
                         </div>
                     </div>
                     <div class="last">
@@ -254,11 +328,21 @@ input{
         var $checkTotal = $('.check-all');
         var $checkItem = $('.item input');
         var $button_01 =$('.am-btn')
-        
-        $(".default").click(function(){
+        $(".wanmei").click(function(){
+            $('.chengle').css({"display":"block"})
+        })
+        $('.ojbk').click(function(){
+            $('.cent_box01').remove();
+            $('.cent_fujian').remove();
+            $('.shuju').remove();
+        })
+        $(".zuo").click(function(){
             $('.money').remove();
             $('.last').remove();
             $(".banner_top").css({ "display": "block"});
+        })
+        $(".you").click(function(){
+            location.href ="http://localhost:7777/checking.html"
         })
         $checkTotal.click(function () {
             $(".am-btn").css({ "color": "#fff", "background": "red" });
@@ -285,6 +369,23 @@ input{
             if (flag) $checkTotal.prop('checked', true);
 
         })
+        window.onload=function(){
+        var $banner = document.querySelector('.banner_top');
+        var $sha = document.querySelector("#close_login");
+        var $box =document.querySelector('#mask');
+        var $btn = document.querySelector('#youbian_01');
+        var $login = document.querySelector('#login');
+        var $qwe = document.querySelector('.zuo');
+        var $ewq = document.querySelector('.you')
+        $btn.onclick = function(){
+            $box.style.display = 'block';
+            $login.style.display = 'block';
+        $sha.onclick =function(){
+            $box.style.display = 'none';
+            $login.style.display = 'none';
+        }
+    }
+        }
     </script>
 </body>
 
