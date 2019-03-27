@@ -77,7 +77,7 @@ var checkInput = (function () {
                         $input.focus();
                         return false;
                     }else{
-                        location.href =  'server/register.php';
+                        $('.form-box').attr('href','https://github.com/qf-l/siku_end.git')
                     }
                 }
             })

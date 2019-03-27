@@ -1,4 +1,5 @@
 <?php
+ header('Access-Control-Allow-Origin:*');
     include('connet_db.php');
     // 获取传递的信息
     $username = $_POST['username'];
