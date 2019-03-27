@@ -238,6 +238,7 @@ li {
     overflow: hidden;
     white-space: nowrap;
     color: #000;
+    text-decoration: none;
 }
 .editor-pick-list .product-name {
     height: 28px;
@@ -246,7 +247,6 @@ li {
 }
 .editor-pick-list .product-desc {
     height: 44px;
-    /* margin-bottom: 30px; */
     font-size: 12px;
 }
 div {
@@ -376,7 +376,7 @@ element.style {
 /* ======第5部分=============== */
 
 .plate-entry.ncontainer {
-    margin:0 0 40px 32px;
+    margin:0 0 40px 75px;
     width:1200px;
     height: 600px;
 
