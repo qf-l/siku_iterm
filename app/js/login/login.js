@@ -2,6 +2,9 @@ $('.login_ewm_title>li').click(function () {
    if (!$('this').hasClass('on')) {
       $(this).addClass('on').siblings().removeClass('on');
       $('.ban').eq($(this).index()).addClass('hua').siblings().removeClass('hua');
+      if($('.qqq').hasClass('on')){
+         $('.loo').hide();
+      }
    }
 })
 
@@ -20,7 +23,7 @@ $('.nthb').on('blur',function(){
    if($('.nthb').val() == ''){
       $('.picUser').removeClass("picUserClick");
    } 
-})
+}) 
 $('.nthp').click(function(){
    $('.picPassWord').addClass("picUserClick");
    $('.kapt_show').addClass("yyy");

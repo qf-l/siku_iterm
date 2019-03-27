@@ -7,10 +7,8 @@
         public $port = '3306';
         public function fetch($sql, $type="bool") {
             $coon = new Mysqli($this->ip, $this->root, $this->password, $this->db, $this->port);
-            // 设置字符集
-            $coon->query("SET CHARACTER SET 'utf8'");//读库   
-            $coon->query("SET NAMES 'utf8'");//写库 
-            // 执行sql语句
+            // $coon->query("SET CHARACTER SET 'utf8'");  
+            // $coon->query("SET NAMES 'utf8'");
             $result = $coon -> query($sql);
             switch($type) {
                 case "bool":
