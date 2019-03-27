@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>核对订单</title>
+    <link rel="stylesheet" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.min.css">
+    <link rel="stylesheet" href="css/checking.css">
+    <style>
+        body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+body,html{
+	font:12px "微软雅黑",Arial;
+	color:#666;	
+	overflow-x:hidden; 
+	height: 100%;
+}
+h1,h2,h3,h4,h5,h6,b,strong{
+	font-weight:normal;
+	font-size:100%;	
+}
+i,em{
+	font-style:normal;	
+}
+a{
+	text-decoration:none;
+	color:#646464;	
+}
+li{
+	list-style:none;	
+}
+input{
+	outline:none;	
+}
+.clearfix{
+	zoom:1;
+}
+.clearfix:after{
+	content:' ';
+	display:block;
+	height:0;
+	clear:both;
+	overflow:hidden;/* 溢出隐藏 */
+}
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="header_top container">
+            <a href="http://www.secoo.com/"><img src="images/logo.png" /></a>
+            <img src="images/q_01.jpg" />
+        </div>
+    </div>
+    <div id="cent">
+        <div class="cent_box contaner">
+            <div class="cent_box01">
+                <p>收货相关信息</p>
+            </div>
+            <div class="cent_neirong">
+                <div class="cent_fujian">
+                    <p>收件人信息</p>
+                </div>
+                <div class="shuju">
+                    <table class="gaizhi">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>*<span>收货人:</span><input type="text" value=""></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>*<span>所在地区:</span><select>
+                                            <option style="color:black">浙江省</option>
+                                        </select>
+                                        <select>
+                                            <option style="color:black">市辖县</option>
+                                        </select>
+                                        <select>
+                                            <option style="color:black">东城区</option>
+                                        </select>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="first">
+                                <td>
+                                    <p>*<span>详细地址</span><input type="text" value="">
+                                </td>
+                                </p>
+                            </tr>
+                            <tr class="second">
+                                <td>
+                                    <p>*<span>手机号码</span><select>
+                                            <option style="color:black">大陆</option>
+                                        </select><input type="text" value="">
+                                </td>
+                                </p>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="zuihou">
+                        <a href="">确认收货地址</a>
+                    </div>
+                </div>
+                <div class="jieshao">
+                    <h2>我的优惠卷</h2>
+                    <p class="haha">特例品不可使用优惠券</p>
+                    <span></span>
+                </div>
+                <div class="banner_top" style="display:none;">
+                        <div class="tishi">
+                             <p>购物车里暂时没有商品,你可以:</p>
+                        </div>
+                        <div class="tanchuang">
+                            <a href="http://www.secoo.com/">返回首页购买商品</a>
+                        </div>
+                    </div>
+                <div class="qingdan">
+                    <h2><input type="checkbox" class="check-all">全选 商品清单</h2>
+                    <div class="money">
+                        <div class="name" style="display:flex;align-self: center;">
+                            <li class="item"><input type="checkbox"></li>
+                            <img src="images/aa_01.png">
+                            <div class="xiugai">
+                                <h3>商品名称</h3>
+                                <a href="" class="xiegai_03">[18春夏新品]IDEAGE/艾迪芝 美国潮牌 复古绸面拉链梭织男士夹克 ID173807G</a><br>
+                                <span>颜色：军绿 尺码：S </span>
+                            </div>
+                        </div>
+                        <div class="fahuo disk">
+                            <h3>发货站</h3>
+                            <p>中国大陆</p>
+                        </div>
+                        <div class="vip disk">
+                            <h3>会员价</h3>
+                            <p>1,355元</p>
+                        </div>
+                        <div class="jiage disk">
+                            <h3>数量</h3>
+                            <p>1</p>
+                        </div>
+                        <div class="num disk">
+                            <h3>运费</h3>
+                            <p>0元</p>
+                        </div>
+                        <div class="heji disk">
+                            <h3>小计</h3>
+                            <p>1,355元</p>
+                        </div>
+                        <div class="xiugai_01">
+                            <h3>操作</h3>
+                            <button class="default" style="border: 0;
+ 
+                            background-color: transparent;
+                             
+                            outline: none ">删除</button>
+                        </div>
+                    </div>
+                    <div class="last">
+                        <div class="last_01">
+                            <div class="meile">
+                                <p>1件商品，商品金额总计：1,355.00元</p><br>
+                                <p>0件包装，包装金额总计：0元</p><br>
+                                <p>运费，普通用户剩1次免运费：0元</p>
+                            </div>
+                            <div class="last_02">
+                                <h3>元</h3>
+                                <span>1,355.00</span>
+                                <p>应付总额：</p>
+                            </div>
+                            <div class="last_03">
+                                <a href="">继续购物</a>
+                                <button type="button" class="am-btn am-btn-primary"
+                                    data-am-modal="{target: '#my-alert'}">
+                                    提交订单
+                                </button>
+
+                                <div class="am-modal am-modal-alert" tabindex="-1" id="my-alert">
+                                    <div class="am-modal-dialog">
+                                        <div class="am-modal-hd">恭喜你!!</div>
+                                        <div class="am-modal-bd">
+                                            提交成功
+                                        </div>
+                                        <div class="am-modal-footer">
+                                            <span class="am-modal-btn">确定</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer_top">
+            <div class="list_top">
+                <div class="footer_left">
+                    <img src="images/QQ.png">
+                    <div class="paixu">
+                        <p class="p1">正品保障</p>
+                        <p class="p2">正品保障</p>
+                        <p class="p3">正品保障</p>
+                        <p class="p4">正品保障</p>
+                        <p class="p5">正品保障</p>
+                    </div>
+                </div>
+                <div class="footer_cent">
+                    <ul class="nice">
+                        <li>
+                            <a class="text_01">关注寺库微信</a>
+                            <span class="weixin">
+                                <img src="http://pic.secoo.com/imagesNew/globalPic/weixin.jpg" width="86" height="86">
+                            </span>
+                            <a class="text_02">扫一扫有惊喜</a>
+                        </li>
+                        <li>
+                            <a class="text_02">关注寺库微信</a>
+                            <span class="weixin">
+                                <img src="http://pic.secoo.com/imagesNew/globalPic/weixin.jpg" width="86" height="86">
+                            </span>
+                            <a class="text_02">扫一扫有惊喜</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_right">
+                    <p>
+                        <a rel="nofollow" href="http://www.secoo.com/static/help/5-1.shtml" target="_blank">加入寺库</a>
+                        <a rel="nofollow" href="http://www.secoo.com/static/help/1-1.shtml" target="_blank">关于寺库</a>
+                        <a rel="nofollow" href="http://www.secoo.com/static/help/6-1.shtml" target="_blank">联系我们</a>
+                        <a rel="nofollow" href="http://www.secoo.com/static/help/2-1-2-2.shtml" target="_blank">支付方式</a>
+                        <a rel="nofollow" href="http://www.secoo.com/static/help/2-1-1-1.shtml" target="_blank">帮助中心</a>
+                        <a rel="nofollow" href="http://www.secoo.com/static/help/2-1-4-1.shtml" target="_blank">售后服务</a>
+                        <a rel="nofollow" href="http://www.secoo.com/static/help/7-1.shtml" target="_blank">免责声明</a>
+                        <a rel="nofollow" href="http://www.secoo.com/static/help/10-1.shtml" target="_blank">礼品采购</a>
+                        <a rel="nofollow"
+                            href="http://e.weibo.com/sikuchina?ref=http%3A%2F%2Fmy.secoo.com%2Fmysecoo.jsp"
+                            target="_blank">寺库微博</a>
+                        <a rel="nofollow" href="http://www.secoo.com/friendlink.shtml" target="_blank">友情链接</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="dibu">
+        <img src="images/dibu.png">
+    </div>
+    <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.js"></script>
+    <script src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.min.js"></script>
+    <script>
+        var $checkTotal = $('.check-all');
+        var $checkItem = $('.item input');
+        var $button_01 =$('.am-btn')
+        
+        $(".default").click(function(){
+            $('.money').remove();
+            $('.last').remove();
+            $(".banner_top").css({ "display": "block"});
+        })
+        $checkTotal.click(function () {
+            $(".am-btn").css({ "color": "#fff", "background": "red" });
+            var bool = $(this).prop('checked')
+            if (bool) {
+                // 全选
+                $checkItem.prop('checked', true);
+            } else {
+                // 非全选
+                $checkItem.prop('checked', false);
+            }
+        })
+        $checkItem.click(function () {
+            $(".button_01").css({ "color": "#fff", "background": "red" });
+            var flag = true;
+            $checkItem.each(function () {
+                if (!$(this).prop('checked')) {
+                    // 有一个文本框没被选中
+                    $checkTotal.prop('checked', false);
+                    flag = false;
+                    return false;
+                }
+            })
+            if (flag) $checkTotal.prop('checked', true);
+
+        })
+    </script>
+</body>
+
+</html>

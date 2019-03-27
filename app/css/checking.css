@@ -1,0 +1,337 @@
+#header{
+    width: 100%;
+    height: 70px;
+    background: #323232;
+    overflow: hidden;
+}
+.header_top{
+    width: 990px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+#cent{
+    padding-bottom: 20px;
+}
+.cent_box{
+    width: 990px;
+    margin: 0 auto;
+}
+.cent_box01{
+    width: 986px;
+    border: 1px solid #f1f1f1;
+    background-color: #fff;
+    padding: 1px;
+}
+.cent_box01 p{
+    height: 38px;
+    background-color: #ececec;
+    line-height: 38px;
+    text-indent: 24px;
+    font-weight: bold;
+    color: #666;
+}
+.cent_neirong{
+    overflow: hidden;
+    width: 100%;
+}
+
+.cent_fujian{
+    margin-top: 1px;
+    border-top: 0;
+    padding: 0 35px 30px 35px;
+}
+.cent_fujian p{
+    height: 38px;
+    line-height: 38px;
+    text-indent: 24px;
+    font-weight: bold;
+    color: #666;
+}
+
+.gaizhi{
+    position: relative;
+}
+.default{
+    padding-left: 0;
+    padding-top: 8px; 
+}
+.gaizhi tr td{
+    float: left;
+    margin: 10px 0 0 68px;
+}
+.gaizhi tr td p{
+    color: lightpink;
+    font-size: 16px;
+}
+.gaizhi tr td p span{
+    color: black;
+    margin: 0 12px;
+}
+.gaizhi tr td p select{
+    color: black;
+    margin: 0 12px;
+}
+.gaizhi tr td p input{
+    height: 30px;
+    line-height: 16px;
+    padding: 2px 5px;
+    border: 1px solid #ccc;
+    color: #333;
+}
+.first input{
+    width: 400px;
+}
+.second input{
+    position: relative;
+    left: 9px;
+    top: -2px;
+}
+.zuihou{
+    padding: 15px 0 0 0;
+    position: relative;
+    left: 68px;
+}
+.zuihou a{
+    padding: 7px 18px;
+    background-color: #9d003f;
+    color: #fff;
+    display: inline-block;
+}
+.jieshao{
+    width: 300px;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.jieshao h2{
+    font-size: 20px;
+    color: black;
+    line-height: 36px;
+    
+}
+.banner_top {
+    padding: 50px 0 140px 0;
+    background: url(http://pic.secoo.com/imagesPic/newCartPic/c_11.jpg) no-repeat 150px 50px;
+}
+.tishi p {
+    font-size: 24px;
+    position: relative;
+    left: 420px;
+    top: 30px;
+}
+.tanchuang a {
+    padding: 10px 40px;
+    background-color: #e93b39;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+    left: 478px;
+    top: 60px;
+}
+.haha{
+    font-size: 18px;
+    color: blue;
+    line-height: 36px;
+}
+.qingdan h2{
+    font-size: 14px;
+    height: 38px;
+    background-color: #ececec;
+    line-height: 38px;
+    text-indent: 24px;
+    font-weight: bold;
+    color: #666;
+}
+.money{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.disk{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.disk p{
+    padding: 10px 0 30px 0 ;
+}
+.name img{
+    width: 81px;
+    height: 76px;
+}
+.name{
+    display: flex;
+    align-items: center;
+}
+.xiugai_01 a{
+    display: block;
+    padding: 10px 0 30px 0;
+}
+.xiugai_03:hover{
+    border-bottom: 1px solid blue;
+}
+.name p{
+    padding: 10px 0 5px 0 ;
+}
+.money{
+    height: 100px;
+}
+.last_01{
+    padding: 15px 45px 25px 30px;
+    margin-top: 6px;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #f1f1f1;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.meile p{
+    float:right;
+    line-height: 8px;
+    color: black;
+}
+.last_02{
+    height: 25px;
+}
+.last_02 p{
+    line-height: 25px;
+    float:right;   
+}
+.last_02 h3{
+    line-height: 25px;
+    float:right;   
+}
+.last_02 span{
+    line-height: 25px;
+    float:right;   
+}
+.last span{
+    color: red;
+    font-size: 20px;
+}
+.last_03{
+    display: flex;
+    justify-content: space-between;
+}
+.last_03>a{
+    color: red;
+    border: 1px solid red;
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+    display: block;
+}
+.last_03 button{
+    width: 160px;
+    height: 40px;
+    background-color: gray;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: microsoft yahei;
+}
+
+#footer{
+    width: 100%;
+    background-color: #f6f6f6;
+    border-top: 1px solid #fff;
+    overflow: hidden;
+}
+.footer_top{
+    width: 1200px;
+    margin: 0 auto;
+}
+.list_top{
+    width: 560px;
+    height: 110px;
+    margin-top: 30px;
+}
+.footer_left{
+    margin: 0 0 -8px 0;
+    border-right:1px solid #666;
+    height: 121px;
+    position: relative;
+    top: -10px;
+}
+.paixu{
+    display: flex;
+}
+.p1{
+    margin: 5px 10px;
+}
+.p2{
+    margin: 5px 0 5px 58px; 
+}
+.p3{
+    margin: 5px 0 5px 68px; 
+}
+.p4{
+    margin: 5px 0 5px 78px; 
+}
+.p5{
+    margin: 5px 0 5px 69px; 
+}
+.footer_cent{
+
+    position: relative;
+    left: 507px;
+    top: -124px;
+    width: 336px;
+    height: 155px;
+}
+.nice{
+    border-right: #666;
+}
+.nice li:nth-child(1){
+    display: flex;
+    flex-direction:column-reverse;
+    align-items: center;
+    border-right: 1px solid #666;
+}
+.nice li:nth-child(2){
+    position: relative;
+    left: 90px;
+    top: -121px;
+    display: flex;
+    flex-direction:column-reverse;
+    align-items: center;
+}
+.footer_right{
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: 245px;
+    height: 155px;
+    border-right: 1px solid #e3e3e3;
+    border-left: 1px solid #fff;
+}
+.footer_right p {
+    position: relative;
+    left: 936px;
+    bottom: 290px;
+    width: 266px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 125px;
+    margin: 15px auto 0;
+}
+.footer_right p a:hover{
+    color: black;
+}
+.footer_right p a{
+    display: block;
+    width: 122px;
+}
+#dibu{
+    background-color: #ececec;
+}
+#dibu img{
+    position: relative;
+    left: 25%;
+}
