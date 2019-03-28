@@ -42,15 +42,12 @@ $jiaoshao.onclick =function(){
             $login.style.display = 'none';
         }
         $qwe.onclick = function(){
-            location.href = "http://localhost:8080/1814/888/sn-project2/shop-car.html";
+            location.href = "http://localhost:7777/checking.html";
         }
         $ewq.onclick = function(){
-            location.href = "";
+            location.href = "http://localhost:7777/headpage1.html";
         }
-        $apple.onmouseenter = function(){
-            console.log(1);
-        }
-        }
+      }
     };
     class Glass {
         constructor(ele) {
