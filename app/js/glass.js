@@ -64,6 +64,7 @@ var glass = (function () {
                 _this.$showBigImage.style.display = 'none';
             }
             this.$showImage.onmousemove = function (ev) {
+    
                 ev = ev || window.event;
                 // 计算小方块定点坐标
                 var x = ev.clientX - this.offsetLeft - _this.$filter.offsetWidth / 2;

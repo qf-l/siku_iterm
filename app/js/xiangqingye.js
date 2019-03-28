@@ -42,10 +42,10 @@ $jiaoshao.onclick =function(){
             $login.style.display = 'none';
         }
         $qwe.onclick = function(){
-            location.href = "http://localhost:7777/checking.html";
+            location.href = "checking.html";
         }
         $ewq.onclick = function(){
-            location.href = "http://localhost:7777/headpage1.html";
+            location.href = "headpage1.html";
         }
       }
     };

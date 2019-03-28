@@ -45,7 +45,7 @@ $('#loginButton').click(function(){
    }, function(data){
        data = JSON.parse(data);
        if(data.code != '404'){
-           location.href = 'headpage1.html';
+           location.href = 'headlogin.html';
        }else{
            alert(data.message);
        }
