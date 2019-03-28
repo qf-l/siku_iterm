@@ -177,8 +177,16 @@ video {
     margin: 54px auto 50px;
 }
 .ncontainer {
-    width: 1200px;
+    width: 1200px ;
     margin: 0 auto;
+}
+.ncontainer .imm{
+   width: 800px;
+   height: 411px;
+}
+.title img{
+    width: 291px;
+    height: 109px;
 }
 
 
@@ -235,6 +243,7 @@ element.style {
 
 
 
+
 /* ======第4部分=============== */
 .secoo-app.ncontainer {
     height: 300px;
@@ -249,7 +258,6 @@ element.style {
 /* ======第5部分=============== */
 
 .plate-entry.ncontainer {
-    margin:0 0 40px 75px;
     width:1200px;
     height: 600px;
 
