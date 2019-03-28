@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/head-common.css">
+    <link rel="stylesheet" href="css/head.css">
+    <style>
+            .show-tips {
+                display: none;
+            }
+            ul,li{
+                list-style: none;
+            }
+            .banner-bigBox{
+                clear: both;
+                width: 100%;
+                height: 70px;
+                background: rgb(236, 198, 30);
+            }
+          .banner-search-box{
+              width: 1200px;
+              margin: 0 auto;
+              position: relative;
+          }
+          .banner-search-box .banner-search-on{
+                width: 43px;
+                height: 30px;
+                background: red;
+                position: absolute;
+                top:18px;right:359px;
+                font-size:16px;
+                line-height: 33px;
+                text-align: center;
+                border:2px solid #666;
+          }
+         
+          .baidu-box .banner-search-bigBox{
+            position: absolute;
+            top:18px;left:390px;
+          }
+          .baidu-box .banner-search-smallBox{
+            position: absolute;
+            top:52px;left:390px;
+          }
+          #baidu{
+              width: 400px;
+              height: 30px;
+              border:2px solid #666;
+          }
+          .baidu-box .banner-search-smallBox:hover{
+              background: rgb(172, 167, 167);
+          }
+          .baidu-box .banner-search-smallBox li:hover{
+              background: rgb(240, 229, 229);
+          }
+         
+ </style>
+</head>
+<body>
+ <div class="sheader">
+        <div class="top  top-btn">
+                <div class="head-lang">
+                    <div class="region-selection">
+                        <h4 class="selected-region">中文</h4>
+                        <i class="iconfont icon-zhankai icon-arrow"></i>
+                        <ul class="region-options">
+                            <li class="region-option">中文</li>
+                            <li class="region-option">EN</li>
+                        </ul>
+                    </div>
+                    <div class="separate-line"></div>
+                    <div class="currency-selection">
+                        <h4 class="selected-currency">RMB ¥</h4>
+                        <i class="iconfont icon-zhankai icon-arrow n-hide"></i>
+                        <ul class="currency-options n-hide">
+                            <li class="currency-option">RMB ¥</li>
+                            <li class="currency-option">USD $</li>
+                            <li class="currency-option">EUR €</li>
+                            <li class="currency-option">GBP £</li>
+                            <li class="currency-option">HKD $</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="head-site clearfix">
+                    <span class="register">
+                        <a class="zh" href="">登 录</a>
+                    </span>
+                    <span class="username">
+                        <a href=""></a>
+                    </span>
+                    <div class="separate-line"></div>
+                    <span class="sign-in">
+                        <a class="zh" href="">注 册</a>
+                    </span>
+                    <span class="log-out">
+                        <a class="zh" href="">退出</a>
+                    </span>
+                    <div class="separate-line"></div>
+                    <span class="shopping-bag">
+                        <a href="">
+                            <i class="iconfont icon-gouwudai icon-shopping-bag"></i>
+                        </a>
+                    </span>
+                    <div class="separate-line"></div>
+                    <span class="collection">
+                        <a href="http://my.secoo.com/favorite/myfavorites.jsp">
+                            <i class="iconfont icon-shoucang icon-collection"></i>
+                        </a>
+                    </span>
+                </div>
+    
+                <div class="head-logo">
+                    <a href="">
+                        <img src="images/013e7d9eb7674c799c3c21e84dd1c88a.jpg" alt="寺库">
+                    </a>
+                </div>
+            </div>
+ </div>
+ <div class="banner-bigBox">
+    <div class="banner-search-box">
+        <h2 class="banner-search-on">搜索</h2>
+        <div class="baidu-box" >
+                <input type="text" id="baidu" class="banner-search-bigBox">
+                <ul class="show-tips banner-search-smallBox">
+                    <li >hello</li>
+                </ul>
+                
+            </div>
+           
+ </div>
+</div>
+
+
+        
+ <script src="js/search_page.js"></script>
+            <script>
+                const baidu = (function () {
+                    let $box, $input, $ulbox,$timer;
+                    return {
+                        init(ele) {
+                            $box = document.querySelector(ele);
+                            $input = $box.firstElementChild;
+                            $ulbox = $box.lastElementChild;
+                            this.event();
+                        },
+                        event() {
+                            var _this = this;
+                            $input.onfocus = function () {
+                                console.log('获取焦点');
+                                _this.show();
+                            }
+                            $input.onclick = function(e) {
+                                e.stopPropagation();
+                            }
+                            $input.oninput = function () {
+                                if (this.value.trim() == '') {
+                                    _this.hidden();
+                                } else {
+                                    clearTimeout($timer);
+                                    $timer = setTimeout(_ => {
+                                        _this.getData(this.value);
+                                        _this.show();
+                                    }, 500)
+                                }
+                            }
+                            document.onclick = function () {
+                                _this.hidden();
+                            }
+                            $ulbox.onclick = function (e) {
+                                // console.log(1);
+                                console.log(e.target);
+                                if(e.target.nodeName === 'LI') {
+                                    $input.value = e.target.innerHTML;   
+                                }
+                            }
+                        },
+                        show() {
+                            if ($input.value.trim() != '')
+                                $ulbox.style.display = 'block'
+                        },
+                        hidden() {
+                            $ulbox.style.display = 'none'
+                        },
+                        getData(val) {
+                            const url = 'https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su';
+                            const data = {
+                                wd: val,
+                                cb: "baidu.insertData"
+                            }
+                            sendJsonp(url, data);
+                        },
+                        insertData(data) {
+                            $ulbox.innerHTML = '';
+                            data.s.forEach(x => {
+                                const $li = document.createElement('li');
+                                $li.innerHTML = x;
+                                $ulbox.appendChild($li);
+                            })
+                        }
+                    }
+                }())
+                baidu.init('.baidu-box');
+            </script>
+
+
+
+
+</body>
+</html>
