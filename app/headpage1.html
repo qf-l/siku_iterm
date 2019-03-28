@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/headpage1.css">
     <link rel="stylesheet" href="css/head-common.css">
     <link rel="stylesheet" href="css/head.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.1/css/swiper.min.css">
 
 </head>
 
@@ -509,88 +509,16 @@
         <div class="editor-pick ncontainer">
             <h3 class="title"></h3>
             <div class="editor-pick-list">
-                <ul class="product-list">
-                    <li> <a href="homepage2.html">
-                            <div class="product-img">
-                                <img class="lazyPic"
-                                    src="images/5c60c68f13fd48a59358be7e103d4583.jpg" style="display: block;">
-                                <div class="mask"></div>
-                            </div>
-                            <div class="product-details">
-                                <p class="product-name">Louis Vuitton/路易威登</p>
-                                <p class="product-desc">Louis Vuitton/路易威登 Pochette Metis 系列 女士 棕色老花 帆布/配皮 手提包/单肩包
-                                    M43984
-                                </p>
-                                <div class="line"></div>
-                                <p class="product-price">￥19,600</p>
-                            </div>
-                        </a> </li>
-                    <li> <a href="homepage2.html">
-                            <div class="product-img">
-                                <img class="lazyPic"
-                                   
-                                    src="images/5c60c68f13fd48a59358be7e103d4583.jpg" style="display: block;">
-                                <div class="mask"></div>
-                            </div>
-                            <div class="product-details">
-                                <p class="product-name">Louis Vuitton/路易威登</p>
-                                <p class="product-desc">Louis Vuitton/路易威登 Pochette Metis 系列 女士 棕色老花 帆布/配皮 手提包/单肩包
-                                    M43984
-                                </p>
-                                <div class="line"></div>
-                                <p class="product-price">￥19,600</p>
-                            </div>
-                        </a> </li>
-                    <li> <a href="homepage2.html">
-                            <div class="product-img">
-                                <img class="lazyPic"
-                                   
-                                    src="images/5c60c68f13fd48a59358be7e103d4583.jpg" style="display: block;">
-                                <div class="mask"></div>
-                            </div>
-                            <div class="product-details">
-                                <p class="product-name">Louis Vuitton/路易威登</p>
-                                <p class="product-desc">Louis Vuitton/路易威登 Pochette Metis 系列 女士 棕色老花 帆布/配皮 手提包/单肩包
-                                    M43984
-                                </p>
-                                <div class="line"></div>
-                                <p class="product-price">￥19,600</p>
-                            </div>
-                        </a> </li>
-                    <li> <a href="homepage2.html">
-                            <div class="product-img">
-                                <img class="lazyPic"
-                                   
-                                    src="images/5c60c68f13fd48a59358be7e103d4583.jpg" style="display: block;">
-                                <div class="mask"></div>
-                            </div>
-                            <div class="product-details">
-                                <p class="product-name">Louis Vuitton/路易威登</p>
-                                <p class="product-desc">Louis Vuitton/路易威登 Pochette Metis 系列 女士 棕色老花 帆布/配皮 手提包/单肩包
-                                    M43984
-                                </p>
-                                <div class="line"></div>
-                                <p class="product-price">￥19,600</p>
-                            </div>
-                        </a> </li>
-                    <li> <a href="homepage2.html">
-                            <div class="product-img">
-                                <img class="lazyPic"
-                                   
-                                    src="images/5c60c68f13fd48a59358be7e103d4583.jpg" style="display: block;">
-                                <div class="mask"></div>
-                            </div>
-                            <div class="product-details">
-                                <p class="product-name">Louis Vuitton/路易威登</p>
-                                <p class="product-desc">Louis Vuitton/路易威登 Pochette Metis 系列 女士 棕色老花 帆布/配皮 手提包/单肩包
-                                    M43984
-                                </p>
-                                <div class="line"></div>
-                                <p class="product-price">￥19,600</p>
-                            </div>
-                        </a> </li>
-
-                </ul>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><a href="http://localhost:7777/xiangqingye.html"><img src="images/m_01.png"></a></div>
+                      <div class="swiper-slide"><a href="http://localhost:7777/xiangqingye.html"><img src="images/m_02.png"></a></div>
+                      <div class="swiper-slide"><a href="http://localhost:7777/xiangqingye.html"><img src="images/m_03.png"></a></div>
+                      <div class="swiper-slide"><a href="http://localhost:7777/xiangqingye.html"><img src="images/m_04.png"></a></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
             </div>
             <span class="bottom-dir-btn">
                 <div class="bottom-dir">
@@ -759,11 +687,15 @@
 
         </div>
     </div>
-
-
-
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.1/js/swiper.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
 </body>
 
 </html>
