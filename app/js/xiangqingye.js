@@ -45,12 +45,9 @@ $jiaoshao.onclick =function(){
             location.href = "http://localhost:7777/checking.html";
         }
         $ewq.onclick = function(){
-            location.href = "";
+            location.href = "http://localhost:7777/headpage1.html";
         }
-        $apple.onmouseenter = function(){
-            console.log(1);
-        }
-        }
+      }
     };
     class Glass {
         constructor(ele) {
