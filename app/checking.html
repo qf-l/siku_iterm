@@ -9,114 +9,182 @@
     <link rel="stylesheet" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.min.css">
     <link rel="stylesheet" href="css/checking.css">
     <style>
-        body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
-body,html{
-	font:12px "微软雅黑",Arial;
-	color:#666;	
-	overflow-x:hidden; 
-	height: 100%;
-}
-h1,h2,h3,h4,h5,h6,b,strong{
-	font-weight:normal;
-	font-size:100%;	
-}
-i,em{
-	font-style:normal;	
-}
-a{
-	text-decoration:none;
-	color:#646464;	
-}
-li{
-	list-style:none;	
-}
-input{
-	outline:none;	
-}
-.clearfix{
-	zoom:1;
-}
-.clearfix:after{
-	content:' ';
-	display:block;
-	height:0;
-	clear:both;
-	overflow:hidden;/* 溢出隐藏 */
-}
-#youbian {
-    position: relative;
-    float: right;
-}
-#youbian_01{
-    display: block;
-    height: 45px;
-    line-height: 45px;
-    color:black;
-    font-size: 12px;
-    text-align: center;
-    position: relative;
-    top: -15px;
-}
-#login{
-    display:none;
-    background:ghostwhite;
-    width:150px;
-    height:100px;
-    position:absolute;
-    left:50%;
-    top:111%;
-    margin-top:-125px;
-    z-index: 1;
-}
-#login #close_login{
-    position:absolute;
-    right:0px;
-    top:-6px;
-    font-size:20px;
-    width:20px;
-    height:20px;
-    cursor:pointer;
-}
-.zhongjian_01{
-    position: relative;
-    left: 133px;
-    top: 64px;
-    font-size: 30px;
-}
+        body,
+        ol,
+        ul,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        th,
+        td,
+        dl,
+        dd,
+        form,
+        fieldset,
+        legend,
+        input,
+        textarea,
+        select {
+            margin: 0;
+            padding: 0
+        }
 
-#login .zuo{
-    padding: 10px 10px;
-    position: relative;
-    left: 9px;
-    top: 24px;
-}
-#login .you{
-    padding: 10px 10px;
-    position: relative;
-    left: 33px;
-    top: 24px;
-}
-.chengle{
-    position: relative;
-    width: 200px;
-    height: 70px;
-    background: rebeccapurple;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    left: 50%;
-}
-.chengle p{
-    text-align: center;
-    color: black;
-    font-size: 16px;
-}
-.chengle .ojbk{
-    padding: 5px;
-    width: 45px;
-    height: 30px;
-    margin: 11px 0px 0px 78px;
-}
+        body,
+        html {
+            font: 12px "微软雅黑", Arial;
+            color: #666;
+            overflow-x: hidden;
+            height: 100%;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        b,
+        strong {
+            font-weight: normal;
+            font-size: 100%;
+        }
+
+        i,
+        em {
+            font-style: normal;
+        }
+
+        a {
+            text-decoration: none;
+            color: #646464;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        input {
+            outline: none;
+        }
+
+        .clearfix {
+            zoom: 1;
+        }
+
+        .clearfix:after {
+            content: ' ';
+            display: block;
+            height: 0;
+            clear: both;
+            overflow: hidden;
+            /* 溢出隐藏 */
+        }
+
+        #youbian {
+            position: relative;
+            float: right;
+        }
+
+        #youbian_01 {
+            display: block;
+            height: 45px;
+            line-height: 45px;
+            color: black;
+            font-size: 12px;
+            text-align: center;
+            position: relative;
+            top: -15px;
+        }
+
+        #login {
+            display: none;
+            background: ghostwhite;
+            width: 150px;
+            height: 100px;
+            position: relative;
+            ;
+            left: -400px;
+            top: 111%;
+            margin-top: -125px;
+            z-index: 1;
+        }
+
+        #login #close_login {
+            position: absolute;
+            right: 0px;
+            top: -6px;
+            font-size: 20px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .zhongjian_01 {
+            position: relative;
+            left: 133px;
+            top: 64px;
+            font-size: 30px;
+        }
+
+        #login .zuo {
+            padding: 10px 10px;
+            position: relative;
+            left: 9px;
+            top: 24px;
+        }
+
+        #login .you {
+            padding: 10px 10px;
+            position: relative;
+            left: 33px;
+            top: 24px;
+        }
+
+        .chengle {
+            position: relative;
+            width: 200px;
+            height: 70px;
+            background: rebeccapurple;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            left: 50%;
+        }
+
+        .chengle p {
+            text-align: center;
+            color: black;
+            font-size: 16px;
+        }
+
+        .chengle .ojbk {
+            padding: 5px;
+            width: 45px;
+            height: 30px;
+            margin: 11px 0px 0px 78px;
+        }
+
+        .yunle {
+            position: relative;
+            top: 15px;
+            left: -23px;
+            padding: 5px;
+            text-align: center;
+            line-height: 0px;
+        }
+
+        .zuile {
+            position: relative;
+            top: -55px;
+            left: 24px;
+            padding: 5px;
+            text-align: center;
+            line-height: 0px;
+        }
     </style>
 </head>
 
@@ -164,13 +232,13 @@ input{
                                 </td>
                                 </p>
                             </tr>
-                            
+
                         </tbody>
                     </table>
                     <div class="zuihou">
                         <button class="wanmei">确认收货地址</button>
                     </div>
-                    <div class="chengle" style="display:none;" >
+                    <div class="chengle" style="display:none;">
                         <p>填写成功</p>
                         <button class="ojbk">确认</button>
                     </div>
@@ -181,13 +249,13 @@ input{
                     <span></span>
                 </div>
                 <div class="banner_top" style="display:none;">
-                        <div class="tishi">
-                             <p>购物车里暂时没有商品,你可以:</p>
-                        </div>
-                        <div class="tanchuang">
-                            <a href="http://www.secoo.com/">返回首页购买商品</a>
-                        </div>
+                    <div class="tishi">
+                        <p>购物车里暂时没有商品,你可以:</p>
                     </div>
+                    <div class="tanchuang">
+                        <a href="http://www.secoo.com/">返回首页购买商品</a>
+                    </div>
+                </div>
                 <div class="qingdan">
                     <h2><input type="checkbox" class="check-all">全选 商品清单</h2>
                     <div class="money">
@@ -210,7 +278,9 @@ input{
                         </div>
                         <div class="jiage disk">
                             <h3>数量</h3>
-                            <p>1</p>
+                            <button class="yunle">-</button>
+                            <p class="count_01">1</p>
+                            <button class="zuile">+</button>
                         </div>
                         <div class="num disk">
                             <h3>运费</h3>
@@ -218,7 +288,7 @@ input{
                         </div>
                         <div class="heji disk">
                             <h3>小计</h3>
-                            <p>1,355元</p>
+                            <p class="count_02">1,355</p>
                         </div>
                         <div class="xiugai_01">
                             <h3>操作</h3>
@@ -235,13 +305,14 @@ input{
                     <div class="last">
                         <div class="last_01">
                             <div class="meile">
-                                <p>1件商品，商品金额总计：1,355.00元</p><br>
+                                <p style="position: relative;
+                                left: 4px;">商品金额总计：<span class="fuqi" style="    position: relative;left: 0px;top: -5px;">1,355.00</span>元</p><br>
                                 <p>0件包装，包装金额总计：0元</p><br>
                                 <p>运费，普通用户剩1次免运费：0元</p>
                             </div>
                             <div class="last_02">
                                 <h3>元</h3>
-                                <span>1,355.00</span>
+                                <span class="count_03">1,355.00</span>
                                 <p>应付总额：</p>
                             </div>
                             <div class="last_03">
@@ -327,22 +398,22 @@ input{
     <script>
         var $checkTotal = $('.check-all');
         var $checkItem = $('.item input');
-        var $button_01 =$('.am-btn')
-        $(".wanmei").click(function(){
-            $('.chengle').css({"display":"block"})
+        var $button_01 = $('.am-btn')
+        $(".wanmei").click(function () {
+            $('.chengle').css({ "display": "block" })
         })
-        $('.ojbk').click(function(){
+        $('.ojbk').click(function () {
             $('.cent_box01').remove();
             $('.cent_fujian').remove();
             $('.shuju').remove();
         })
-        $(".zuo").click(function(){
+        $(".zuo").click(function () {
             $('.money').remove();
             $('.last').remove();
-            $(".banner_top").css({ "display": "block"});
+            $(".banner_top").css({ "display": "block" });
         })
-        $(".you").click(function(){
-            location.href ="http://localhost:7777/checking.html"
+        $(".you").click(function () {
+            location.href = "http://localhost:7777/checking.html"
         })
         $checkTotal.click(function () {
             $(".am-btn").css({ "color": "#fff", "background": "red" });
@@ -369,22 +440,53 @@ input{
             if (flag) $checkTotal.prop('checked', true);
 
         })
-        window.onload=function(){
-        var $banner = document.querySelector('.banner_top');
-        var $sha = document.querySelector("#close_login");
-        var $box =document.querySelector('#mask');
-        var $btn = document.querySelector('#youbian_01');
-        var $login = document.querySelector('#login');
-        var $qwe = document.querySelector('.zuo');
-        var $ewq = document.querySelector('.you')
-        $btn.onclick = function(){
-            $box.style.display = 'block';
-            $login.style.display = 'block';
-        $sha.onclick =function(){
-            $box.style.display = 'none';
-            $login.style.display = 'none';
+        window.onload = function () {
+            var $banner = document.querySelector('.banner_top');
+            var $sha = document.querySelector("#close_login");
+            var $box = document.querySelector('#mask');
+            var $btn = document.querySelector('#youbian_01');
+            var $login = document.querySelector('#login');
+            var $qwe = document.querySelector('.zuo');
+            var $ewq = document.querySelector('.you');
+            $btn.onclick = function () {
+                $box.style.display = 'block';
+                $login.style.display = 'block';
+                $sha.onclick = function () {
+                    $box.style.display = 'none';
+                    $login.style.display = 'none';
+                }
+            }
         }
-    }
+        var $zuile = document.querySelector('.zuile');
+        var $yunle = document.querySelector('.yunle');
+        var $count_01 = document.querySelector('.count_01');
+        var $count_02 = document.querySelector('.count_02');
+        var $fuqi = document.querySelector('.fuqi');
+        var $count_03 = document.querySelector('.count_03');
+        console.log($count_03);
+        var count = 1;
+        var jiaqian = 1355;
+        $zuile.onclick = function () {
+            count++;
+            $count_01.innerHTML = count;
+            $count_02.innerHTML = count*jiaqian;
+            $fuqi.innerHTML = count*jiaqian;
+            $count_03.innerHTML = count*jiaqian;
+        }
+        $yunle.onclick = function () {
+            if (count == 1) {
+                $count_01.innerHTML = count;
+                $count_02.innerHTML = jiaqian;
+                $fuqi.innerHTML = jiaqian;
+                $count_03.innerHTML = jiaqian;
+            } else {
+                count--;
+                $count_01.innerHTML = count;
+                $count_02.innerHTML = count*jiaqian;
+                $fuqi.innerHTML = count*jiaqian;
+                $count_03.innerHTML = count*jiaqian;
+
+            }
         }
     </script>
 </body>
