@@ -81,6 +81,7 @@ var checkInput = (function () {
                  }
                  let username = $('#username').val();
                  let password = $('#password').val();
+                 console.log(apiAllGet.register);
                  $.post(apiAllGet.register, {
                      username,
                      password

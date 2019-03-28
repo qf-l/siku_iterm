@@ -36,18 +36,15 @@ $('.nthp').on('blur',function(){
    }   
 })
 // 给登陆按钮加点击事件
-$('.login_btn').on('click',function(){
-   let username = $('#username').val();
-   let password = $('#password').val();
+$('#loginButton').click(function(){
+   let username = $('#userName').val();
+   let password = $('.nthp').val();
    $.post(apiAllGet.login,{
       username,
       password
    }, function(data){
        data = JSON.parse(data);
        if(data.code != '404'){
-           $.cookie('siku',`{"id":${data.id},"username":"${data.username}"}`,{
-               path: '/',
-           })
            location.href = 'headpage1.html';
        }else{
            alert(data.message);
